@@ -5,11 +5,6 @@ from datetime import datetime, timedelta
 app = Flask(__name__)
 
 
-@app.route("/")
-def home():
-    return "Home"
-
-
 today = datetime.now()
 
 
@@ -22,7 +17,7 @@ def get_current_utc_time():
     return current_time_with_offset.strftime("%Y-%m-%d %H:%M:%S")
 
 
-@app.route("/ovidot", methods=['GET'],)
+@app.route("/api", methods=['GET'],)
 def get_user():
     args = request.args
     slack_name = args.get("slack_name")
