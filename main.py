@@ -28,7 +28,7 @@ def get_user():
             "current_day": today.strftime('%A'),
             "utc_time": get_current_utc_time(),
             "track": track,
-            "github_file_url": "https://github.com/ovidot/Backend-task1/blob/main/main.py",
+            "github_file_url": "https://github.com/ovidot/Backend-task1/blob/mains/main.py",
             "github_repo_url": "https://github.com/ovidot/Backend-task1",
             "Status_code": 200
         }
