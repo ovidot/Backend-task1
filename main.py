@@ -13,7 +13,7 @@ def get_current_utc_time():
     random_offset = random.randint(-120, 120)
 
     current_time_with_offset = current_time + timedelta(seconds=random_offset)
-    return current_time_with_offset.strftime("%Y-%m-%dT%H:%M:%SZ")
+    return current_time.strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 @app.route("/api", methods=['GET'],)
